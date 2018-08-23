@@ -1,0 +1,44 @@
+
+header {
+  text-align: center;
+  margin:inherit;
+}
+
+/*** Ajustes do aside das paginas****/
+.image {
+	   position: relative;
+	   width: 100%;
+}
+
+.janela_texto {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding-top:1em;
+}
+
+.janela_texto p{
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size:0.9em;
+  color:#fff;
+  padding-left: 1em;
+}
+.janela_texto h3{
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size:1.5em;
+  font-weight: bold;
+  color:#fff;
+  padding-left: 1em;
+}
+
+/*** Ajustes do Footer das paginas****/
+.footer ul{
+  text-decoration: none;
+  list-style:none;
+}
+.copy{
+  text-align: center;
+}
