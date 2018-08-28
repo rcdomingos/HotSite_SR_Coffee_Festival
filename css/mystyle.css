@@ -54,12 +54,14 @@ header{
 }
 
 
-/**Coles do titulos do siste **/
-.art-main h1,.section-main h1, .aside-main h2{
+/**Cores do titulos do site **/
+.art-main h1,.section-main h1, .aside-main h2, .art-musica h1,
+.section-musica h1{
   color: #c87d44;
   text-shadow: 2px 1px 1px #000000;
 }
-/** CONFIGURAÇÕES DA PAGINA HOMER **/
+
+/** CONFIGURAÇÕES DA PAGINA HOME **/
 /**ajustes para o article principal **/
 .art-main h1{
   text-align: center;
@@ -77,7 +79,7 @@ a.button:hover{
   background-color: #a5581f;
 }
 
-/*** Ajustes do aside das paginas****/
+/*** Ajustes do aside das pagina****/
 .image {
 	   position: relative;
 	   width: 100%;
@@ -199,11 +201,11 @@ div.janela_texto:hover {
   }
 
   header{
-    height:373px;
+    height:25em;
     background: url(../img/FundoHeader-mobile.jpg) #120e0f no-repeat;
     background-size: cover;
     padding-top: 0;
-    padding-bottom:0; */
+    padding-bottom:0;
     margin: 0;
     border:0;
   }
@@ -213,7 +215,7 @@ img#logo{
 }
 #borda{
   padding:0 2% 0 2%;
-  width: 80%;
+  height:25em;
   height:100%;
   background-color: #120e0f;
   margin: 0 auto;
@@ -223,7 +225,7 @@ img#logo{
     border-left: 1px dashed #ffb47d;
     border-right:1px dashed #ffb47d;
     margin: 0;
-    height:100%;
+   height:25em;
     padding: 0;
   }
   .art-main img{
@@ -231,7 +233,8 @@ img#logo{
     max-width: 150px;
     text-align: center;
  }
-   .art-main ,.section-main {
+   /* adicionando um padding no mobile por seção */
+   .art-main ,.section-main,.section-musica,.art-musica {
      padding: 2em;
      text-align: center;
    }
