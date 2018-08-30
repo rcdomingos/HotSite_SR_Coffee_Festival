@@ -5,7 +5,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>São Roque Coffe Festival</title>
+    <title>São Roque Coffee Festival</title>
     <meta name="description" content="Hot Site para São Roque Coffee Festival (aulas praticas de desginer)">
     <meta name="author" content="Reginaldo, Renata e Thais">
     <!-- Mobile Specific Metas
@@ -65,6 +65,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id suscipit eros, vitae dignissim justo.
   						Sed sed odio ac augue porta condimentum vitae in ligula. Sed justo tortor, ullamcorper a tellus et, dictum
   						molestie quam. Duis quis pharetra erat. Proin lacinia sagittis velit.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="nine columns">
               <table id="tabale-musicas" class="u-full-width">
                 <caption>Se programe para não perder <br> nenhum show </caption>
                 <!-- <p>30 de novembro a <br>2 de dezembro </p> -->
@@ -78,27 +82,27 @@
                 <tbody>
                   <tr>
                     <td>30/11</td>
-                    <td>Atari 2600</td>
+                    <td>Coldplay</td>
                     <td>18:00 hrs</td>
                   </tr>
                   <tr>
                     <td>30/11</td>
-                    <td>Atari 2600</td>
+                    <td>Twenty One Pilots</td>
                     <td>20:00 hrs</td>
                   </tr>
                   <tr>
                     <td>30/11</td>
-                    <td>Atari 2600</td>
+                    <td>The Beatles</td>
                     <td>22:00 hrs</td>
                   </tr>
                   <tr>
                     <td>31/11</td>
-                    <td>Atari 2600</td>
+                    <td>Linkin Park</td>
                     <td>18:00 hrs</td>
                   </tr>
                   <tr>
                     <td>31/11</td>
-                    <td>Atari 2600</td>
+                    <td>Red Hot Chili Peppers</td>
                     <td>20:00 hrs</td>
                   </tr>
                   <tr>
@@ -108,46 +112,53 @@
                   </tr>
                   <tr>
                     <td>01/12</td>
-                    <td>Atari 2600</td>
+                    <td>Panic! At The Disco</td>
                     <td>18:00 hrs</td>
                   </tr>
                   <tr>
                     <td>01/12</td>
-                    <td>Atari 2600</td>
+                    <td>Arctic Monkeys</td>
                     <td>20:00 hrs</td>
                   </tr>
                   <tr>
                     <td>01/12</td>
-                    <td>Atari 2600</td>
+                    <td>Fall Out Boy</td>
                     <td>22:00 hrs</td>
                   </tr>
                   <tr>
                     <td>02/12</td>
-                    <td>Atari 2600</td>
+                    <td>AC/DC</td>
                     <td>16:00 hrs</td>
                   </tr>
                   <tr>
                     <td>02/12</td>
-                    <td>Atari 2600</td>
+                    <td>Paramore</td>
                     <td>18:00 hrs</td>
                   </tr>
                   <tr>
                     <td>02/12</td>
-                    <td>Atari 2600</td>
+                    <td>The Rolling Stones</td>
                     <td>20:00 hrs</td>
                   </tr>
                   <tr>
                     <td>02/12</td>
-                    <td>Atari 2600</td>
+                    <td>Queen</td>
                     <td>22:00 hrs</td>
                   </tr>
 
                 </tbody>
               </table>
-
+            </div>
+            <div class="three columns">
+              <img id="img2" src="img/img2-music.png" alt="Logo Premium Quality">
+              <picture id="img-music" class="u-max-full-width">
+                    <source media="(max-width: 549px)" srcset="img/music-aside-mobile.jpg">
+                    <source media="(min-width: 550px)" srcset="img/music-aside-desktop.jpg">
+                    <img src="img/music-aside-desktop.jpg" alt="imagem de um violão com um xicara">
+              </picture>
+            </div>
   				</div>
-  			</div>
-      </section>
+  		 </section>
     </div>
       <!-- Rodape da pagina com menu     –––––––––– -->
   		<footer class="footer u-full-width u-cf">
@@ -155,20 +166,27 @@
   			<div class="row">
         	<div class="one-half column">
   					<nav class="menu"> <!--menu principal do site-->
-  						<ul>
-                <li><a href="">Como Chegar</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tiposcafe.html">Tipos de Café</a></li>
-                <li><a href="gastronomia.html">Gastronomia</a></li>
-                <li><a href="musica.html">Musica</a></li>
-  						</ul>
+										<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.google.com/maps/dir//-23.539321,-47.136788/@-23.5394066,-47.2071095,12z" rel="external"
+                  title="Trace Sua Rota" target="_blank">Como Chegar</a></li>
+    						<li><a href="tipos-de-café.html">Tipos de Café</a></li>
+    						<li><a href="gastronomia.html">Gastronomia</a></li>
+    						<li><a href="musica.html">Musica</a></li>
+    				  </ul>
   					</nav>
   				</div>
-          <!-- espaco para o logo ou redes sociais -->
-          <div class="logo-footer one-half column">
-            <p><img id="logo-footer" src="img/Logo.png" alt="[logo]São Roque Coffe Festival"/></p>
+         <!-- espaco para o logo ou redes sociais -->
+          	<div id="div-logo" class="logo-footer one-half column">
+           		<a href="index.html"> <img id="logo-footer" src="img/Logo.png" alt="[logo]São Roque Coffe Festival"/></a>
+												<!-- botão volta ao topo -->
+												<div id="volta-top">
+													<a href="#top" data-scroll="#top" class="back-to-top" title="Voltar ao Topo">
+														<img src="img/back-to-top-arrow.svg" alt="Botão Voltar ao Topo" title="Voltar ao Topo">
+													</a>
+											</div>
           </div>
-  			</div>
+  						</div>
   		  <div class="row copy">
   			  <div class="twelve columns">
       		  <p><small>&copy; 2018 RRT WebDesign.</small></p>
