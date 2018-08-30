@@ -1,3 +1,9 @@
+﻿/* Site São Roque Coffee Festival CSS */
+/*
+Author: Reginaldo, Renata e Thais
+Description: Ajustes a padões do site
+Version: 1.0
+*/
 
 
 /*** FONTES PADRÂO DO SITE **/
@@ -9,7 +15,7 @@
   font-family: 'Rokkitt', serif;
 }
 
-/** Ajustes do header **/
+/*********** AJUSTES DO HEADER  *******************************/
 header {
   text-align: center;
   margin:inherit;
@@ -27,7 +33,7 @@ header {
 }
 
 header{
-  height: 560px;
+  height: 565px;
   padding-top: 2%;
   padding-bottom: 2%;
   /*width: 100%;
@@ -61,7 +67,7 @@ header{
   text-shadow: 2px 1px 1px #000000;
 }
 
-/** CONFIGURAÇÕES DA PAGINA HOME **/
+/*********** CONFIGURAÇÕES DA PAGINA HOME *********************/
 /**ajustes para o article principal **/
 .art-main h1{
   text-align: center;
@@ -71,15 +77,16 @@ header{
 /** ** ajuste da section **/
 .button{
  background-color: #c87d44;
- border-color: ##7f4c26;
+ border-color: #7f4c26;
  color:#fff;
 }
 
 a.button:hover{
   background-color: #a5581f;
+  color:#fff;
 }
 
-/*** Ajustes do aside das pagina****/
+/*** Ajustes do aside da pagina****/
 .image {
 	   position: relative;
 	   width: 100%;
@@ -98,22 +105,76 @@ a.button:hover{
 }
 
 .janela_texto {
-  -webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
   transition: background-color 2s;
 }
 
 div.janela_texto:hover {
-     background-color: rgba(0, 0, 0, 0.8);
-
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .botao{
   text-align: center;
 
 }
-/*****************************************************************************/
+/**************************************************************/
+/************* AJUSTES DA PAGINA MUSICA ***********************/
 
-/*** Ajustes do Footer das paginas****/
+.art-musica h1,.section-musica h1{
+  text-align: center;
+}
+
+#img-music img{
+  padding-top: 10%;
+}
+
+/**************************************************************/
+/************* AJUSTE DA PÁGINA GASTRONOMIA *******************/
+
+.sct-gastronomia h2{
+  color: #c87d44;
+  text-shadow: 2px 1px 1px #000000;
+  padding-top: 50px;
+}
+
+/* article h1{
+        padding-top: 50px;
+    }
+
+article img{
+        padding-top: 40px;
+
+} */
+
+/**************************************************************/
+/************* AJUSTES DO FOOTER DAS PAGINAS ******************/
+
+#volta-top{
+/*				border-bottom: 1px solid #999;*/
+  border-radius: 1.2em;
+  width:70px;
+	height:70px;
+}
+div#volta-top{
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+}
+
+#volta-top img{
+	width:70px;
+	height:70px;
+	opacity: 0.4;
+/*box-shadow: 2px 1px 4px #000000;*/
+	transform: rotate(-30deg);
+  border-radius: 1.2em;
+  box-shadow: 2px 2px 4px #000;
+	transition: transform 1s;
+  }
+
+#volta-top img:hover {
+  transform: none;
+}
+
 .footer{
   background-color: #120e0f;
   color: #c87d44;
@@ -125,7 +186,7 @@ div.janela_texto:hover {
 
 }
 /* Clear a float */
-].u-cf {
+.u-cf {
   content: "";
   display: table;
   clear: both; }
@@ -155,9 +216,10 @@ div.janela_texto:hover {
 .copy{
     text-align: center;
 }
-
-/** AJUSTES RESPONSIVOS **/
-
+/**************************************************************/
+/********** AJUSTES RESPONSIVOS *******************************/
+/** Ajustes Padrões devem ser colocados em cima desse bloco **/
+/**Padrõe apenas para desktop **/
 @media only screen and (min-width: 960px) {
   .janela_texto {
     position: absolute;
@@ -173,7 +235,7 @@ div.janela_texto:hover {
   }
 
 }
-/** tamanho do IPAD **/
+/****Padrões para tablet tamanho do IPAD **/
 @media only screen and (max-width:958px) {
     .janela_texto {
         position: absolute;
@@ -183,14 +245,14 @@ div.janela_texto:hover {
         background-color: rgba(0, 0, 0, 0.4);
         cursor: pointer;
         padding-top:0;
-        padding-bottom: :0;
+        padding-bottom:0;
     }
     img{
       max-width: 100%;
       }
 }
 
-/** mais ou menos os tamanho padrão de um celular **/
+/** Padrões para Mobile mais ou menos os tamanho padrão de um celular **/
 @media only screen and (max-width:549px) {
   body {
   width:100%;
@@ -209,14 +271,23 @@ div.janela_texto:hover {
     margin: 0;
     border:0;
   }
-img#logo{
-  max-height: 200px;
-  max-width: 200px;
+		img#logo{
+			max-width: 200px;
+			max-height: 154px;
 }
+
+	div#div-logo{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				max-width: 200px;
+				}
+
 #borda{
   padding:0 2% 0 2%;
+  width: 80%;
   height:25em;
-  height:100%;
+
   background-color: #120e0f;
   margin: 0 auto;
 }
@@ -225,7 +296,7 @@ img#logo{
     border-left: 1px dashed #ffb47d;
     border-right:1px dashed #ffb47d;
     margin: 0;
-   height:25em;
+    height:25em;
     padding: 0;
   }
   .art-main img{
@@ -233,7 +304,7 @@ img#logo{
     max-width: 150px;
     text-align: center;
  }
-   /* adicionando um padding no mobile por seção */
+    /* adicionando um padding no mobile por seção */
    .art-main ,.section-main,.section-musica,.art-musica {
      padding: 2em;
      text-align: center;
@@ -261,16 +332,18 @@ img#logo{
      margin: 0 auto;
      width: 100%;
   }
-  .logo-footer{
-    text-align: center;
-  }
 
+
+#img2{
+  max-height: 100px;
+  max-width: 100px;
+}
 
 div.container{
     margin: 0!important;
     width: 100%!important;
     padding: 0!important;
-
   }
 
 }
+/**************************************************************/
