@@ -147,20 +147,21 @@ article img{
 
 /**************************************************************/
 /************* AJUSTES DO FOOTER DAS PAGINAS ******************/
-
-#volta-top{
+/**botão para voltar ao topo **/
+.back-to-top{
 /*				border-bottom: 1px solid #999;*/
   border-radius: 1.2em;
   width:70px;
 	height:70px;
+  display: none;
 }
-div#volta-top{
+div.back-to-top {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
 }
 
-#volta-top img{
+.back-to-top img{
 	width:70px;
 	height:70px;
 	opacity: 0.4;
@@ -171,7 +172,7 @@ div#volta-top{
 	transition: transform 1s;
   }
 
-#volta-top img:hover {
+.back-to-top img:hover {
   transform: none;
 }
 
